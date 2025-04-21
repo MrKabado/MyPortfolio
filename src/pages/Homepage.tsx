@@ -1,25 +1,33 @@
 import React from 'react';
-import Profile from '../assets/profile.jpg';
+// import Profile from '../assets/profile.jpg';
+import Profile from '../assets/profile-no-bg.png';
 import './Homepage.css';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { HandRaisedIcon } from '@heroicons/react/24/outline';
 
 function Homepage() {
   return (
-    <div className="font-segoe global-holder flex justify-center items-center gap-[5%] px-[5%] border2 mx-5 my-5 border-black min-h-screen bg-white"> {/* Changed h-full to min-h-screen */}
-        <div className='des-holder border border-black border-solid flex flex-col justify-between p-4 h-auto w-[80%]'>
-            <p className='text-[40px]'>Hi there! <br /> I am <span className='text-[#2563EB]'>Jerson Jay </span> <br /> your Aspiring Web Developer</p> <br />
-            <pre>
+    // global holder
+    <div className='font-roboto global-holder border2 border-solid border-black flex justify-evenly pt-[5%]'>
 
-            </pre>
-            <button className='btn border-[2px] border-transparent bg-[#2563EB] text-white rounded-[5px] mt-10 w-fit px-4 py-1 text-xl transition-all duration-500 ease-in-out'>
-              Explore 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 inline-block ml-2">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-              </svg>
-            </button>
-        </div>
-        <div className="image-holder border border-black border-solid inline-block">
-  <img src={Profile} alt="Profile" className="w-[80%] h-auto max-w-none" />
-</div>
+      {/* description holder */}
+      <div className='description-holder border border-solid border-black w-[40%] flex flex-col justify-between'>
+        <p className='text-[50px] font-[500]'>
+          Hi there! <HandRaisedIcon className='w-[50px] h-[50px] inline-flex'/> <br /> I am 
+          <span className='text-[#2563EB] font-[700]'> Jerson Jay </span><br /> 
+          an Aspiring <br /> <span className='text-[#2563EB] font-[700]'> Web Developer </span>
+        </p>
+
+        <button className='btn-1 px-[3%] py-[1%] border-[2px] border-solid border-transparent rounded-[5px] bg-[#2563EB] text-white text-[20px] font-medium w-fit duration-300 transition-all ease-in-out'>
+          Know Me  <MagnifyingGlassIcon className="w-6 h-6 inline-flex" />
+        </button>
+      </div>
+
+      {/* image-holder */}
+      <div className='image-holder border border-solid border-black w-[40%]'>
+        <img src={Profile} alt="Profile Picture" className='w-[400px]'/>
+      </div>
+
     </div>
   )
 }

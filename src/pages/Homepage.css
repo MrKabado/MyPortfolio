@@ -1,6 +1,6 @@
-.btn:hover {
+.btn-1:hover {
     border: 2px solid #2563EB;
-    background-color: white;
+    background-color: transparent;
     color: #2563EB;
     transform: scale(1.03);
 }
