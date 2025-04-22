@@ -5,6 +5,7 @@ import { HomeIcon } from '@heroicons/react/24/outline';
 import { UserCircleIcon } from '@heroicons/react/24/outline';
 import { BriefcaseIcon } from '@heroicons/react/24/outline';
 import { PhoneIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -14,25 +15,25 @@ function Header() {
                 <div>
                     <ul className="flex gap-4 items-center justify-center text-md text-black px-[5px]">
                         <li>
-                            <a className="nav-link inline-flex items-center gap-1 w-[70px] justify-center font-semibold" id="home" href="#">
+                            <Link to="/homepage" className="nav-link inline-flex items-center gap-1 w-[70px] justify-center font-semibold" id="home">
                                 <HomeIcon className="btn-home w-16" />
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="nav-link inline-flex items-center gap-1 w-[105px] text-center font-semibold" id="aboutme" href="#">
+                            <Link to="/about" className="nav-link inline-flex items-center gap-1 w-[105px] text-center font-semibold" id="aboutme">
                                 <UserCircleIcon className='btn-about w-6' />
-                                About Me</a>
+                                About Me</Link>
                         </li>
                         <li>
-                            <a className="nav-link inline-flex items-center gap-1 w-[190px] text-center font-semibold" id="servproj" href="#">
+                            <Link to="/services-and-projects" className="nav-link inline-flex items-center gap-1 w-[190px] text-center font-semibold" id="servproj">
                                 <BriefcaseIcon className='btn-services w-6' />
-                                Services and Projects</a>
+                                Services and Projects</Link>
                         </li>
                         <li>
-                            <a className="nav-link inline-flex items-center gap-1 w-[80px] text-center font-semibold" id="contact" href="#">
+                            <Link to="/contact" className="nav-link inline-flex items-center gap-1 w-[80px] text-center font-semibold" id="contact">
                                 <PhoneIcon className='btn-contact w-7' />
-                                Contact</a>
+                                Contact</Link>
                         </li>
                     </ul>
                 </div>

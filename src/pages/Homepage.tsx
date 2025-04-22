@@ -4,10 +4,14 @@ import Profile from '../assets/profile-no-bg.png';
 import './Homepage.css';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { HandRaisedIcon } from '@heroicons/react/24/outline';
+import Header from '../components/Header';
 
 function Homepage() {
   return (
-    // global holder
+    <div>
+    <Header />
+    
+    {/* global holder */}
     <div className='font-roboto global-holder border2 border-solid border-black flex justify-evenly pt-[5%]'>
 
       {/* description holder */}
@@ -28,6 +32,7 @@ function Homepage() {
         <img src={Profile} alt="Profile Picture" className='w-[400px]'/>
       </div>
 
+    </div>
     </div>
   )
 }
