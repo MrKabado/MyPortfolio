@@ -2,17 +2,20 @@ import React from 'react';
 // import Profile from '../assets/profile.jpg';
 import Profile from '../assets/profile-no-bg.png';
 import './Homepage.css';
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { PhoneIcon } from '@heroicons/react/24/outline';
+import { PhoneArrowDownLeftIcon } from '@heroicons/react/24/outline';
 import { HandRaisedIcon } from '@heroicons/react/24/outline';
 import Header from '../components/Header';
+import { Link } from 'react-router-dom';
 
 function Homepage() {
   return (
     <div>
     <Header />
+
     
     {/* global holder */}
-    <div className='font-roboto global-holder border2 border-solid border-black flex justify-evenly pt-[5%]'>
+    <div className='font-roboto global-holder border2 border-solid border-black flex justify-evenly pt-[5%] text-[#1E293B]'>
 
       {/* description holder */}
       <div className='description-holder border border-solid border-black w-[40%] flex flex-col justify-between'>
@@ -22,9 +25,11 @@ function Homepage() {
           an Aspiring <br /> <span className='text-[#2563EB] font-[700]'> Web Developer </span>
         </p>
 
-        <button className='btn-1 px-[3%] py-[1%] border-[2px] border-solid border-transparent rounded-[5px] bg-[#2563EB] text-white text-[20px] font-medium w-fit duration-300 transition-all ease-in-out'>
-          Know Me  <MagnifyingGlassIcon className="w-6 h-6 inline-flex" />
-        </button>
+        <Link to="/Contact">
+          <button className='btn-1 px-[3%] py-[1%] border-[2px] border-solid border-transparent rounded-[5px] bg-[#2563EB] text-white text-[20px] font-medium w-fit duration-300 transition-all ease-in-out'>
+          Contact Me Now! <PhoneArrowDownLeftIcon className="w-6 h-6 inline-flex" /> 
+          </button>
+        </Link>
       </div>
 
       {/* image-holder */}
