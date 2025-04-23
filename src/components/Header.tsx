@@ -21,7 +21,7 @@ function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/about" className="nav-link inline-flex items-center gap-1 w-[105px] text-center font-semibold" id="aboutme">
+                            <Link to="/about-me" className="nav-link inline-flex items-center gap-1 w-[105px] text-center font-semibold" id="aboutme">
                                 <UserCircleIcon className='btn-about w-6' />
                                 About Me</Link>
                         </li>

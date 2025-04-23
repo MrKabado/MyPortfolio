@@ -15,7 +15,7 @@ function Homepage() {
 
     
     {/* global holder */}
-    <div className='font-roboto global-holder border2 border-solid border-black flex justify-evenly pt-[5%] text-[#1E293B]'>
+    <div className='font-roboto global-holder border2 border-solid border-black flex justify-between mx-[10%] pt-[5%] text-[#1E293B]'>
 
       {/* description holder */}
       <div className='description-holder border border-solid border-black w-[40%] flex flex-col justify-between'>
