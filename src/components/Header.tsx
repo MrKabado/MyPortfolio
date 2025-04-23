@@ -7,6 +7,8 @@ import { BriefcaseIcon } from '@heroicons/react/24/outline';
 import { PhoneIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
+
+
 function Header() {
     return (
         <header className="font-segoe flex justify-center items-center bg-white text-[#2563EB] shadow-[0px_0px_5px_0px_gray] h-[70px]">

@@ -11,6 +11,7 @@ export default {
       fontFamily: {
         segoe: ['"Segoe UI"', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },
