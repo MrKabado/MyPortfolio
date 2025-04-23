@@ -1,10 +1,12 @@
 import React from 'react';
-// import Profile from '../assets/profile.jpg';
+
 import Profile from '../assets/profile-no-bg.png';
 import './Homepage.css';
+//icon
 import { PhoneIcon } from '@heroicons/react/24/outline';
 import { PhoneArrowDownLeftIcon } from '@heroicons/react/24/outline';
 import { HandRaisedIcon } from '@heroicons/react/24/outline';
+
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
 
@@ -15,11 +17,11 @@ function Homepage() {
 
     
     {/* global holder */}
-    <div className='font-roboto global-holder border2 border-solid border-black flex justify-between mx-[10%] pt-[5%] text-[#1E293B]'>
+    <div className='font-roboto global-holder flex justify-between mx-[10%] pt-[5%] text-[#1E293B]'>
 
       {/* description holder */}
-      <div className='description-holder border border-solid border-black w-[40%] flex flex-col justify-between'>
-        <p className='text-[50px] font-[500]'>
+      <div className='description-holder w-[40%] flex flex-col justify-between'>
+        <p className='text-[50px] font-[500] leading-tight'>
           Hi there! <HandRaisedIcon className='w-[50px] h-[50px] inline-flex'/> <br /> I am 
           <span className='text-[#2563EB] font-[700]'> Jerson Jay </span><br /> 
           an Aspiring <br /> <span className='text-[#2563EB] font-[700]'> Web Developer </span>
@@ -33,7 +35,7 @@ function Homepage() {
       </div>
 
       {/* image-holder */}
-      <div className='image-holder border border-solid border-black w-[40%]'>
+      <div className='image-holder w-[40%]'>
         <img src={Profile} alt="Profile Picture" className='w-[400px]'/>
       </div>
 

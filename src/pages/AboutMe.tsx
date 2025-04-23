@@ -3,6 +3,13 @@ import Header from '../components/Header';
 import './AboutMe.css';
 import { Link } from 'react-router-dom';
 
+//icon
+import { CodeBracketSquareIcon } from '@heroicons/react/24/outline';
+import { DevicePhoneMobileIcon } from '@heroicons/react/24/outline';
+import { AdjustmentsHorizontalIcon } from '@heroicons/react/24/outline';
+import { ArrowsRightLeftIcon } from '@heroicons/react/24/outline';
+import { LightBulbIcon } from '@heroicons/react/24/outline';
+
 export default function AboutMe() {
   return (
     <div className='global-holder'>
@@ -43,25 +50,30 @@ export default function AboutMe() {
 
                 <div className='card-holder-1 flex flex-row justify-evenly'>
                   <div className='w-[30%] card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#d946ef] hover:scale-105'>
+                    <CodeBracketSquareIcon className='w-[40px] inline-block text-[#d946ef]'/>
                     <p><span className='text-[#d946ef] font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#d946ef] hover:cursor-default'>Front-End Development</span>
                    – HTML, CSS, JavaScript, ReactJS, Tailwind CSS</p>
                   </div>
                   <div className='w-[30%] card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#22d3ee] hover:scale-105'>
-                    <p><span className='text-[#22d3ee] font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#22d3ee] hover:cursor-default'>Responsive Web Design</span>
+                    <DevicePhoneMobileIcon className='w-[40px] inline-block text-[#30cae2]'/>  
+                    <p><span className='text-[#30cae2] font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#22d3ee] hover:cursor-default'>Responsive Web Design</span>
                    – Creating mobile-friendly and user-focused layouts</p>
                   </div>
                   <div className='w-[30%] card-3 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#fb923c] hover:scale-105'>
+                    <AdjustmentsHorizontalIcon className='w-[40px] inline-block text-[#fb923c]'/>
                     <p><span className='text-[#fb923c] font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#fb923c] hover:cursor-default'>Basic UI/UX Design</span>
                     – Designing clean, simple, and intuitive interfaces</p>
                   </div>
                 </div>
                 <br />
                 <div className='card-holder-2 flex justify-evenly'>
-                  <div className='w-[30%] card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#4ade80] hover:scale-105'>
-                    <p><span className='text-[#4ade80] font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#4ade80] hover:cursor-default'>Version Control</span>
+                  <div className='w-[30%] card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#40c370] hover:scale-105'>
+                    <ArrowsRightLeftIcon className='w-[40px] inline-block text-[#40c370]'/>
+                    <p><span className='text-[#40c370] font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#40c370] hover:cursor-default'>Version Control</span>
                    – Basic knowledge of Git and GitHub for tracking and collaborating</p>
                   </div>
                   <div className='w-[30%] card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#a855f7] hover:scale-105'>
+                    <LightBulbIcon className='w-[40px] inline-block text-[#a855f7]'/>
                     <p><span className='text-[#a855f7] font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#a855f7] hover:cursor-default'>Continuous Learning</span>
                    – Always exploring new tools and improving current skills</p>
                   </div>
@@ -73,16 +85,18 @@ export default function AboutMe() {
 
               <div className='shadow-[0px_0px_2px_0px_gray] rounded-[5px] bg-[#F0F4FF] p-2 w-[100%]'>
                 <h1 className='text-[25px] text-[#2563eb] font-bold'> Ready to bring ideas to life?</h1>
-                <p className='text-[17px]'>I offer creative, reliable, and efficient solutions that go beyond just code. Tap in and explore what I can do for you — because your next big project deserves nothing less.</p>
+                <p className='text-[17px]'>I offer creative, reliable, and efficient solutions that go beyond just code. Tap in and explore what I can do for you — because your next big project deserves nothing less. <Link to="/contact">
+                  <button className='btn border-2 border-solid border-[#2563eb] rounded px-2 text-white bg-[#2563eb] hover:bg-[#3568d6]'>
+                    Reach Out!</button>
+                </Link></p>
               </div>
               </div>
               <br />              
-              <div className=''>
-              <p>Let’s Build Something Awesome Together!</p>
+              {/* <div className=''>
                 <Link to="/contact">
                   <button>Reach Out!</button>
                 </Link>
-              </div>
+              </div> */}
           </div>
         
         </div>
