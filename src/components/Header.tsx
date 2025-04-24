@@ -5,11 +5,15 @@ import { HomeIcon } from '@heroicons/react/24/outline';
 import { UserCircleIcon } from '@heroicons/react/24/outline';
 import { BriefcaseIcon } from '@heroicons/react/24/outline';
 import { PhoneIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 
 function Header() {
+    const linkClass = ({ isActive } : { isActive: boolean }) =>
+        isActive ? 'text-blue-500' : 'text-gray-700';
+
     return (
         <header className="font-segoe flex justify-center items-center bg-white text-[#2563EB] shadow-[0px_0px_5px_0px_gray] h-[70px]">
             <nav className="flex justify-between items-center w-full px-[8%] py-[10px]">
@@ -17,25 +21,33 @@ function Header() {
                 <div>
                     <ul className="flex gap-4 items-center justify-center text-md text-black px-[5px]">
                         <li>
-                            <Link to="/homepage" className="nav-link inline-flex items-center gap-1 w-[70px] justify-center font-semibold" id="home">
-                                <HomeIcon className="btn-home w-16" />
+                        <NavLink to="/homepage" className={({ isActive }) =>
+                                `nav-link inline-flex items-center gap-1 w-[70px] justify-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]'}`
+                            }>
+                                <HomeIcon className="btn-home w-6" />
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to="/about-me" className="nav-link inline-flex items-center gap-1 w-[105px] text-center font-semibold" id="aboutme">
+                            <NavLink to="/about-me" className={({ isActive }) =>
+                                `nav-link inline-flex items-center gap-1 w-[105px] text-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]'}`
+                             }>
                                 <UserCircleIcon className='btn-about w-6' />
-                                About Me</Link>
+                                About Me</NavLink>
                         </li>
                         <li>
-                            <Link to="/services-and-projects" className="nav-link inline-flex items-center gap-1 w-[190px] text-center font-semibold" id="servproj">
+                            <NavLink to="/services-and-projects" className={({ isActive }) => 
+                                `nav-link inline-flex items-center gap-1 w-[190px] text-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]' }`
+                            }>
                                 <BriefcaseIcon className='btn-services w-6' />
-                                Services and Projects</Link>
+                                Services and Projects</NavLink>
                         </li>
                         <li>
-                            <Link to="/contact" className="nav-link inline-flex items-center gap-1 w-[80px] text-center font-semibold" id="contact">
+                            <NavLink to="/contact" className={({ isActive }) =>
+                                 `nav-link inline-flex items-center gap-1 w-[80px] text-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]'}` 
+                                 }>
                                 <PhoneIcon className='btn-contact w-7' />
-                                Contact</Link>
+                                Contact</NavLink>
                         </li>
                     </ul>
                 </div>
