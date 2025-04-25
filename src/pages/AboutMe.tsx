@@ -20,20 +20,20 @@ export default function AboutMe() {
     </Headroom>
 
 
-      <div className='font-sogoe about-holder border-2 border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px] mx-[10%] my-[5%] p-5 text-[#1E293B]'>
-        <div className='des-holder p-5 flex flex-col'>
+      <div className='font-sogoe about-holder border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px] mx-[10%] my-[5%] p-10 text-[#1E293B]'>
+        <div className='des-holder flex flex-col'>
           <h1 className='text-[30px] text-[#2563eb] font-bold'>
             <UserIcon className='w-[50px] inline-flex items-center' /> Who Am I?
           </h1>
           <br />
-          <p className='shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px]'>
+          <p className='text-justify shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px]'>
           Hi, I’m Jerson Jay — a dedicated Information Technology student passionate about turning ideas into digital solutions. I have a passion for technology and a knack for problem-solving, aiming to create innovative solutions that meet and exceed expectations.
           </p>
           <br />
 
           <h1 className='text-[#2563eb] text-[25px] font-bold'>Background</h1>
           <br />
-          <p className='shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px]'>
+          <p className='text-justify shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px]'>
           Hi again! My journey into tech began with a fascination for how things work behind the scenes—how websites load, how apps respond, and how technology continues to shape the world around us. That curiosity led me to pursue a degree in Information Technology at Cordova Public College. <br />
           <br />
           As an irregular student in Information Technology, my academic journey has been unique. Shifting between different sections and adapting to new classmates and teaching styles each semester has taught me the value of flexibility, perseverance, and the ability to thrive in dynamic environments. But it’s also been a valuable experience that has taught me to stay resilient, adaptable, and focused on continuous learning. <br />
