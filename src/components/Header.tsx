@@ -21,8 +21,8 @@ function Header() {
                 <div>
                     <ul className="flex gap-4 items-center justify-center text-md text-black px-[5px]">
                         <li>
-                        <NavLink to="/homepage" className={({ isActive }) =>
-                                `nav-link inline-flex items-center gap-1 w-[70px] justify-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]'}`
+                        <NavLink to="/" className={({ isActive }) =>
+                                `nav-link inline-flex items-center gap-1 w-[70px] justify-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default border-l-2 border-[#64748B border-[#64748B]' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]'}`
                             }>
                                 <HomeIcon className="btn-home w-6" />
                                 Home
@@ -30,21 +30,21 @@ function Header() {
                         </li>
                         <li>
                             <NavLink to="/about-me" className={({ isActive }) =>
-                                `nav-link inline-flex items-center gap-1 w-[105px] text-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]'}`
+                                `nav-link inline-flex items-center gap-1 w-[105px] text-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default border-l-2 border-[#64748B border-[#64748B]' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]'}`
                              }>
                                 <UserCircleIcon className='btn-about w-6' />
                                 About Me</NavLink>
                         </li>
                         <li>
                             <NavLink to="/services-and-projects" className={({ isActive }) => 
-                                `nav-link inline-flex items-center gap-1 w-[190px] text-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]' }`
+                                `nav-link inline-flex items-center gap-1 w-[190px] text-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default border-l-2 border-[#64748B border-[#64748B]' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]' }`
                             }>
                                 <BriefcaseIcon className='btn-services w-6' />
                                 Services and Projects</NavLink>
                         </li>
                         <li>
                             <NavLink to="/contact" className={({ isActive }) =>
-                                 `nav-link inline-flex items-center gap-1 w-[80px] text-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]'}` 
+                                 `nav-link inline-flex items-center gap-1 w-[80px] text-center font-semibold ${isActive ? 'text-[#64748B] font-[500] scale-[1.03] cursor-default border-l-2 border-[#64748B border-[#64748B]' : 'hover:text-[#2563eb] hover:font-[500] hover:scale-[1.03]'}` 
                                  }>
                                 <PhoneIcon className='btn-contact w-7' />
                                 Contact</NavLink>
