@@ -1,13 +1,19 @@
 import React from 'react';
 import Header from '../components/Header';
+import Output1 from '../assets/output-1.png';
 
 export default function ServicesAndProjects() {
+
+  const output1 = () => {
+    window.open('https://jersonjay-portfolio.netlify.app/', '_blank');
+  }
+
   return (
     //global holder
     <div>
     <Header />
     
-    <div className='font-sogoe about-holder border border-solid border-black mx-[10%] my-[5%] p-10 text-[#1E293B]'>
+    <div className='font-sogoe border border-solid border-black mx-[10%] my-[5%] p-10 text-[#1E293B]'>
         <h1 className=''>What I Create for You</h1>
 
         <div className='border border-solid border-black p-2 my-5'>
@@ -48,8 +54,22 @@ export default function ServicesAndProjects() {
           
         </div>
 
-        <div className='border border-black border-solid p-2 my-5 '>
-          <p>contains projects (small or big)</p>
+        <div className=''>
+          <h1>My Projects</h1>
+          <p>This is my little projects/outputs that I do at school or in times of learning something</p>
+
+          <div className='projects-holder border border-solid border-black p-2 my-5'>
+            <h1>Small Outputs</h1>
+            <div className='flex felx-col'>
+              <section>
+              <h1>My Portfolio</h1>
+              <p>This Portfolio created just by using basic html, css, and a little bit JavaScript</p>
+              </section>
+              <section>
+                  <img className='cursor-pointer w-[50%]' id='output1' src={Output1} alt="output1-clickable" onClick={output1} />
+              </section>
+            </div>
+          </div>
         </div>
 
     </div>
