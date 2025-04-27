@@ -23,7 +23,7 @@ export default function AboutMe() {
       <div className='font-sogoe about-holder border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px] mx-[10%] my-[5%] p-10 text-[#1E293B]'>
         <div className='des-holder flex flex-col'>
           <h1 className='text-[30px] text-[#2563eb] font-bold'>
-            <UserIcon className='w-[50px] inline-flex items-center' /> Who Am I?
+            <UserIcon className='w-[50px] inline-block align-middle m-2' /> Who Am I?
           </h1>
           <br />
           <p className='text-justify shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px]'>
