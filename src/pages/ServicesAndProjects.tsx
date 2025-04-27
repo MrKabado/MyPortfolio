@@ -1,11 +1,16 @@
 import React from 'react';
 import Header from '../components/Header';
 import Output1 from '../assets/output-1.png';
+import Output2 from '../assets/output-2.png';
 
 export default function ServicesAndProjects() {
 
   const output1 = () => {
     window.open('https://jersonjay-portfolio.netlify.app/', '_blank');
+  }
+
+  const output2 = () => {
+    window.open('https://random-fun-jokes.netlify.app/', '_blank');
   }
 
   return (
@@ -60,13 +65,23 @@ export default function ServicesAndProjects() {
 
           <div className='projects-holder border border-solid border-black p-2 my-5'>
             <h1>Small Outputs</h1>
-            <div className='flex felx-col'>
-              <section>
+            <div className='flex flex-row justify-evenly mt-5'>
+              <section className='border border-solid border-black w-[50%]'>
               <h1>My Portfolio</h1>
               <p>This Portfolio created just by using basic html, css, and a little bit JavaScript</p>
               </section>
-              <section>
-                  <img className='cursor-pointer w-[50%]' id='output1' src={Output1} alt="output1-clickable" onClick={output1} />
+              <section className='border border-solid border-black w-[50%]'>
+                  <img className='cursor-pointer' id='output1' src={Output1} alt="output1-clickable" onClick={output1} />
+              </section>
+            </div>
+
+            <div className='flex flex-row justify-evenly mt-5 border-2 border-solid border-black'>
+              <section className='border border-solid border-black w-[50%]'>
+              <h1>Random Jokes</h1>
+              <p>This was created for our ouput in school, just basic html, css, and js</p>
+              </section>
+              <section className='border border-solid border-black w-[50%]'>
+                  <img className='cursor-pointer' id='output1' src={Output2} alt="output1-clickable" onClick={output2} />
               </section>
             </div>
           </div>

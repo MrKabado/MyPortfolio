@@ -98,11 +98,6 @@ export default function AboutMe() {
               </div>
               </div>
               <br />              
-              {/* <div className=''>
-                <Link to="/contact">
-                  <button>Reach Out!</button>
-                </Link>
-              </div> */}
           </div>
               
         </div>
