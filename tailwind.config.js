@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily: {
         segoe: ['"Segoe UI"', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },

@@ -45,11 +45,11 @@ export default function AboutMe() {
           <br />
 
           <h1 className="text-[#2563eb] text-[25px] font-bold drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)] hover:text-[#3b82f6] transition-all duration-300">What I Can Do!</h1>
-          <p className='shadow-[0px_0px_2px_0px_gray] rounded-[5px] bg-[#F0F4FF] mt-5 p-2 text-[17px]'>I’m constantly honing my craft, solving problems, and crafting creative solutions. With a passion for design, development, and everything in between, I focus on building digital experiences that are both functional and engaging.</p>
+          <p className='shadow-[0px_0px_5px_0px_gray] rounded-[5px] mt-5 p-2 text-[17px]'>I’m constantly honing my craft, solving problems, and crafting creative solutions. With a passion for design, development, and everything in between, I focus on building digital experiences that are both functional and engaging.</p>
           <br />
           <div className='skillset-holder flex flex-col justify-evenly gap-5'>
               
-              <div className='shadow-[0px_0px_2px_0px_gray] rounded-[5px] bg-[#F0F4FF]  p-2 w-[100%]'>
+              <div className='shadow-[0px_0px_2px_0px_gray] rounded-[5px]  p-2 w-[100%]'>
                 <h1 className='text-[25px] text-[#2563eb] font-bold'>My Skills</h1>
 
                 <br />
