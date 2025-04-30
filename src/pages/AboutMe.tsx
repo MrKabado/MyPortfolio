@@ -55,32 +55,32 @@ export default function AboutMe() {
                 <br />
 
                 <div className='card-holder-1 flex flex-row justify-evenly'>
-                  <div className='w-[30%] card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#d946ef] hover:scale-105'>
+                  <div className='group w-[30%] card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#d946ef] hover:scale-105'>
                     <CodeBracketSquareIcon className='w-[40px] inline-block text-[#d946ef]'/>
-                    <p><span className='text-[#d946ef] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#d946ef] hover:cursor-default'>Front-End Development</span><br />
+                    <p><span className='text-[#d946ef] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#d946ef] group-hover:cursor-default'>Front-End Development</span><br />
                    HTML, CSS, JavaScript, ReactJS, Tailwind CSS</p>
                   </div>
-                  <div className='w-[30%] card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#22d3ee] hover:scale-105'>
+                  <div className='group w-[30%] card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#22d3ee] hover:scale-105'>
                     <DevicePhoneMobileIcon className='w-[40px] inline-block text-[#30cae2]'/>  
-                    <p><span className='text-[#30cae2] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#22d3ee] hover:cursor-default'>Responsive Web Design</span><br />
+                    <p><span className='text-[#30cae2] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#22d3ee] group-hover:cursor-default'>Responsive Web Design</span><br />
                    Creating mobile-friendly and user-focused layouts</p>
                   </div>
-                  <div className='w-[30%] card-3 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#fb923c] hover:scale-105'>
+                  <div className='group w-[30%] card-3 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#fb923c] hover:scale-105'>
                     <AdjustmentsHorizontalIcon className='w-[40px] inline-block text-[#fb923c]'/>
-                    <p><span className='text-[#fb923c] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#fb923c] hover:cursor-default'>Basic UI/UX Design</span><br />
+                    <p><span className='text-[#fb923c] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#fb923c] group-hover:cursor-default'>Basic UI/UX Design</span><br />
                     Designing clean, simple, and intuitive interfaces</p>
                   </div>
                 </div>
                 <br />
                 <div className='card-holder-2 flex justify-evenly'>
-                  <div className='w-[30%] card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#40c370] hover:scale-105'>
+                  <div className='group w-[30%] card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#40c370] hover:scale-105'>
                     <ArrowsRightLeftIcon className='w-[40px] inline-block text-[#40c370]'/>
-                    <p><span className='text-[#40c370] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#40c370] hover:cursor-default'>Version Control</span><br />
+                    <p><span className='text-[#40c370] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#40c370] group-hover:cursor-default'>Version Control</span><br />
                    Basic knowledge of Git and GitHub for tracking and collaborating</p>
                   </div>
-                  <div className='w-[30%] card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#a855f7] hover:scale-105'>
+                  <div className='group w-[30%] card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#a855f7] hover:scale-105'>
                     <LightBulbIcon className='w-[40px] inline-block text-[#a855f7]'/>
-                    <p><span className='text-[#a855f7] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out hover:border-b-[#a855f7] hover:cursor-default'>Continuous Learning</span><br />
+                    <p><span className='text-[#a855f7] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#a855f7] group-hover:cursor-default'>Continuous Learning</span><br />
                    Always exploring new tools and improving current skills</p>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default function AboutMe() {
               <div className='shadow-[0px_0px_2px_0px_gray] rounded-[5px] bg-[#F0F4FF] p-2 w-[100%]'>
                 <h1 className='text-[25px] text-[#2563eb] font-bold'> Ready to bring ideas to life?</h1>
                 <p className='text-[17px]'>I offer creative, reliable, and efficient solutions that go beyond just code. Tap in and explore what I can do for you — because your next big project deserves nothing less. <Link to="/contact">
-                  <button className='btn border-2 border-solid border-transparent rounded px-2 text-[#2563eb] bg-transparent duration-200 transition-all ease-in-out hover:border-[#2563eb] hover:font-bold'>
+                  <button className='text-[17px] rounded px-2 text-[#2563eb] hover:underline'>
                     Reach Out!</button>
                 </Link></p>
               </div>

@@ -27,12 +27,14 @@ export default function ServicesAndProjects() {
       <Header />
     </Headroom>
     
+
+    {/* Start of Services part */}
     <div className='font-sogoe mx-[10%] my-[5%] p-10 text-[#1E293B] border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px]'>
         <h1 className='text-[30px] text-[#2563eb] font-bold'>
           {/* <PencilSquareIcon className=' w-[40px] inline-block align-middle m-2'/> */}
           What I Create for You</h1>
 
-        <div className='font-montserrat flex flex-row xl:grid-rows-2 gap-4 my-5'>
+        <div className='font-montserrat flex flex-row s:grid-cols-2 xl:grid-rows-2 gap-4 my-5'>
           <div className='group border-2 border-transparent shadow-[0px_0px_5px_0px_gray] rounded-[5px] my-5 p-2 duration-500 transition-all ease-in-out hover:translate-y-[-10px] hover:bg-[#4070F4] hover:text-white'>
             <h1 className='text-[#2563eb] text-[23px] font-extrabold group-hover:text-white mb-2'>
               <CodeBracketIcon className='w-10' />
@@ -58,34 +60,51 @@ export default function ServicesAndProjects() {
           </div> 
           
         </div>
+        {/* End of Services part */}
 
-        <div className=''>
-          <h1>My Projects</h1>
-          <p>This is my little projects/outputs that I do at school or in times of learning something</p>
+        <hr className='border-2'/>
 
-          <div className='projects-holder border border-solid border-black p-2 my-5'>
-            <h1>Small Outputs</h1>
-            <div className='flex flex-row justify-evenly mt-5'>
-              <section className='border border-solid border-black w-[50%]'>
-              <h1>My Portfolio</h1>
-              <p>This Portfolio created just by using basic html, css, and a little bit JavaScript</p>
-              </section>
-              <section className='border border-solid border-black w-[50%]'>
-                  <img className='cursor-pointer' id='output1' src={Output1} alt="output1-clickable" onClick={output1} />
-              </section>
+        {/* This is Project part */}
+        <div className='my-[10%]'>
+        <h1 className='text-[25px] font-bold text-[#2563eb]'>
+          My Small Projects</h1>
+        <p className='text-[15px]'>
+          These are some small projects that I've made during school and while learning new things.</p>
+
+          {/* project images holder */}
+          <div className='grid gap-10 mt-10 md:grid-cols-2'>
+            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition'>
+              <h1 className='text-xl font-semibold text-blue-600'>
+                My Portfolio</h1>
+              <p className='mt-2'>
+                A personal Portfolio made using basic HTML, CSS, and a bit of JavaScript.</p>
+
+              <img 
+                src={Output1} 
+                alt="MyPortfolio img" 
+                onClick={output1}
+                className='w-full mt-4 rounded cursor-pointer hover:opacity-90 transition'
+                />
             </div>
 
-            <div className='flex flex-row justify-evenly mt-5 border-2 border-solid border-black'>
-              <section className='border border-solid border-black w-[50%]'>
-              <h1>Random Jokes</h1>
-              <p>This was created for our ouput in school, just basic html, css, and js</p>
-              </section>
-              <section className='border border-solid border-black w-[50%]'>
-                  <img className='cursor-pointer' id='output1' src={Output2} alt="output1-clickable" onClick={output2} />
-              </section>
+            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition'>
+              <h1 className='text-xl font-semibold text-green-600'>
+                Random Jokes</h1>
+              <p className='mt-2'>
+                A simple school output build with HTML, CSS, and JavaScript that tells random jokes.</p>
+
+                <img 
+                  src={Output2} 
+                  alt="RandomJokes img" 
+                  onClick={output2}
+                  className='w-full mt-4 rounded cursor-pointer hover:opacity-90-transition'
+                  />
             </div>
           </div>
+
+
         </div>
+        {/* End of Project */}
 
     </div>
     </div>
