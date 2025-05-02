@@ -9,6 +9,9 @@ import { AdjustmentsHorizontalIcon } from '@heroicons/react/24/outline';
 import { ArrowsRightLeftIcon } from '@heroicons/react/24/outline';
 import { LightBulbIcon } from '@heroicons/react/24/outline';
 import { UserIcon } from '@heroicons/react/24/outline';
+import { Cog6ToothIcon } from '@heroicons/react/24/outline';
+
+
 import Headroom from 'react-headroom';
 
 export default function AboutMe() {
@@ -54,37 +57,47 @@ export default function AboutMe() {
 
                 <br />
 
-                <div className='card-holder-1 flex flex-row justify-evenly'>
-                  <div className='group w-[30%] card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#d946ef] hover:scale-105'>
+                <div className='grid gap-6 grid-cols-3 card-holder-1'>
+
+                  <div className='group w-auto card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#d946ef] hover:scale-105'>
                     <CodeBracketSquareIcon className='w-[40px] inline-block text-[#d946ef]'/>
                     <p><span className='text-[#d946ef] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#d946ef] group-hover:cursor-default'>Front-End Development</span><br />
                    HTML, CSS, JavaScript, ReactJS, Tailwind CSS</p>
                   </div>
-                  <div className='group w-[30%] card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#22d3ee] hover:scale-105'>
+
+                  <div className='group w-auto card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#22d3ee] hover:scale-105'>
                     <DevicePhoneMobileIcon className='w-[40px] inline-block text-[#30cae2]'/>  
                     <p><span className='text-[#30cae2] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#22d3ee] group-hover:cursor-default'>Responsive Web Design</span><br />
                    Creating mobile-friendly and user-focused layouts</p>
                   </div>
-                  <div className='group w-[30%] card-3 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#fb923c] hover:scale-105'>
+
+                  <div className='group w-auto card-3 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#fb923c] hover:scale-105'>
                     <AdjustmentsHorizontalIcon className='w-[40px] inline-block text-[#fb923c]'/>
                     <p><span className='text-[#fb923c] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#fb923c] group-hover:cursor-default'>Basic UI/UX Design</span><br />
                     Designing clean, simple, and intuitive interfaces</p>
                   </div>
-                </div>
-                <br />
-                <div className='card-holder-2 flex justify-evenly'>
-                  <div className='group w-[30%] card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#40c370] hover:scale-105'>
+                {/* </div> */}
+                {/* <br /> */}
+                {/* <div className='card-holder-2 flex justify-evenly'> */}
+                  <div className='group w-auto card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#40c370] hover:scale-105'>
                     <ArrowsRightLeftIcon className='w-[40px] inline-block text-[#40c370]'/>
                     <p><span className='text-[#40c370] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#40c370] group-hover:cursor-default'>Version Control</span><br />
                    Basic knowledge of Git and GitHub for tracking and collaborating</p>
                   </div>
-                  <div className='group w-[30%] card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#a855f7] hover:scale-105'>
+
+                  <div className='group w-auto card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#a855f7] hover:scale-105'>
                     <LightBulbIcon className='w-[40px] inline-block text-[#a855f7]'/>
                     <p><span className='text-[#a855f7] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#a855f7] group-hover:cursor-default'>Continuous Learning</span><br />
                    Always exploring new tools and improving current skills</p>
                   </div>
+
+                  <div className='group w-auto card-2 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-red-500 hover:scale-105'>
+                    <Cog6ToothIcon className='w-[40px] inline-block text-red-500'/>
+                    <p><span className='text-red-500 text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-red-500 group-hover:cursor-default'>Code Optimization</span><br />
+                    Focused on improving software performance through efficient coding and debugging.</p>
+                  </div>
                 </div>
-                <br />
+                {/* <br /> */}
 
                 
               </div>
