@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Profile from '../assets/profile-no-bg.png';
-import './Homepage.css';
 //icon
-import { PhoneIcon } from '@heroicons/react/24/outline';
 import { PhoneArrowDownLeftIcon } from '@heroicons/react/24/outline';
 import { HandRaisedIcon } from '@heroicons/react/24/outline';
+import { SunIcon } from '@heroicons/react/24/outline';
+import { MoonIcon } from '@heroicons/react/24/outline';
 
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
@@ -17,7 +17,7 @@ function Homepage() {
 
     
     {/* global holder */}
-    <div className='font-roboto global-holder flex justify-between mx-[10%] pt-[5%] text-[#1E293B]'>
+    <div className='font-poppins global-holder flex justify-between mx-[10%] pt-[5%] text-[#1E293B]'>
 
       {/* description holder */}
       <div className='description-holder w-[40%] flex flex-col justify-between'>
@@ -28,15 +28,18 @@ function Homepage() {
         </p>
 
         <Link to="/Contact">
-          <button className='btn-1 px-[3%] py-[1%] border-[2px] border-solid border-transparent rounded-[5px] bg-[#2563EB] text-white text-[20px] font-medium w-fit duration-300 transition-all ease-in-out'>
+          <button className='btn-1 px-[3%] py-[1%] border-[2px] border-solid border-transparent rounded-[5px] bg-[#2563EB] text-white text-[20px] font-medium w-fit duration-300 transition-all ease-in-out hover:border-2 hover:border-solid hover:border-[#2563EB] hover:bg-transparent hover:text-[#2563eb] hover:scale-[1.03]'>
           Contact Me Now! <PhoneArrowDownLeftIcon className="w-6 h-6 inline-flex" /> 
           </button>
         </Link>
+        <div className='flex justify-start w-fit'>
+            <SunIcon className='w-[30px] hover:scale-[1.05] hover:text-[#2563eb] hover:cursor-pointer'/><MoonIcon className='w-[30px] mx-5 hover:scale-[1.05] hover:text-[#2563eb] hover:cursor-pointer'/>
+          </div>
       </div>
 
       {/* image-holder */}
       <div className='image-holder w-[40%]'>
-        <img src={Profile} alt="Profile Picture" className='w-[400px]'/>
+        <img src={Profile} alt="Profile Picture" className='w-[400px] rounded-full border border-solid border-transparent bg-[#1E293B]'/>
       </div>
 
     </div>
