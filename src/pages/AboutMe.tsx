@@ -23,7 +23,7 @@ export default function AboutMe() {
     </Headroom>
 
 
-      <div className='font-sogoe about-holder border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px] mx-[10%] my-[5%] p-10 text-[#1E293B]'>
+      <div className='font-poppins about-holder border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px] mx-[10%] my-[5%] p-10 text-[#1E293B]'>
         <div className='des-holder flex flex-col'>
           <h1 className='text-[30px] text-[#2563eb] font-bold'>
             <UserIcon className='w-[50px] inline-block align-middle m-2' /> Who Am I?
@@ -52,7 +52,7 @@ export default function AboutMe() {
           <br />
           <div className='skillset-holder flex flex-col justify-evenly gap-5'>
               
-              <div className='shadow-[0px_0px_2px_0px_gray] rounded-[5px]  p-2 w-[100%]'>
+              <div className='rounded-[5px]  p-2 w-[100%]'>
                 <h1 className='text-[25px] text-[#2563eb] font-bold'>My Skills</h1>
 
                 <br />
@@ -76,9 +76,7 @@ export default function AboutMe() {
                     <p><span className='text-[#fb923c] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#fb923c] group-hover:cursor-default'>Basic UI/UX Design</span><br />
                     Designing clean, simple, and intuitive interfaces</p>
                   </div>
-                {/* </div> */}
-                {/* <br /> */}
-                {/* <div className='card-holder-2 flex justify-evenly'> */}
+
                   <div className='group w-auto card-1 border-2 border-solid border-transparent rounded-[10px] p-3 shadow-[0px_0px_5px_0px_gray] transition-all duration-300 ease-in-out hover:border-[#40c370] hover:scale-105'>
                     <ArrowsRightLeftIcon className='w-[40px] inline-block text-[#40c370]'/>
                     <p><span className='text-[#40c370] text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-[#40c370] group-hover:cursor-default'>Version Control</span><br />
@@ -96,8 +94,8 @@ export default function AboutMe() {
                     <p><span className='text-red-500 text-justify font-bold border-2 border-solid border-transparent transition-all duration-300 ease-in-out group-hover:border-b-red-500 group-hover:cursor-default'>Code Optimization</span><br />
                     Focused on improving software performance through efficient coding and debugging.</p>
                   </div>
+
                 </div>
-                {/* <br /> */}
 
                 
               </div>

@@ -9,10 +9,8 @@ import FitXpert from '../assets/FitXpert.png';
 
 
 //icon
-import { PencilSquareIcon } from '@heroicons/react/24/outline';
-import { CodeBracketIcon } from '@heroicons/react/24/outline';
-import { CpuChipIcon } from '@heroicons/react/24/outline';
-import { DevicePhoneMobileIcon } from '@heroicons/react/24/outline';
+import { DevicePhoneMobileIcon, CpuChipIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
+import { Dumbbell, GraduationCap, Laugh } from 'lucide-react';
 
 export default function ServicesAndProjects() {
 
@@ -37,7 +35,7 @@ export default function ServicesAndProjects() {
     
 
     {/* Start of Services part */}
-    <div className='font-sogoe mx-[10%] my-[5%] p-10 text-[#1E293B] border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px]'>
+    <div className='font-poppins mx-[10%] my-[5%] p-10 text-[#1E293B] border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px]'>
         <h1 className='text-[30px] text-[#2563eb] font-bold'>
           {/* <PencilSquareIcon className=' w-[40px] inline-block align-middle m-2'/> */}
           What I Create for You</h1>
@@ -81,9 +79,9 @@ export default function ServicesAndProjects() {
 
           {/* project images holder */}
           <div className='grid gap-10 mt-10 md:grid-cols-2'>
-            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition'>
+            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
               <h1 className='text-xl font-semibold text-blue-600'>
-                My Portfolio</h1>
+                My Portfolio <GraduationCap className='inline-block'/></h1>
               <p className='mt-2'>
                 A personal Portfolio made using basic HTML, CSS, and a bit of JavaScript.</p>
 
@@ -92,12 +90,13 @@ export default function ServicesAndProjects() {
                 alt="MyPortfolio img" 
                 onClick={output1}
                 className='w-full mt-4 rounded cursor-pointer hover:opacity-90 transition'
+                title='go to website'
                 />
             </div>
 
-            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition'>
+            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
               <h1 className='text-xl font-semibold text-green-600'>
-                Random Jokes</h1>
+                Random Jokes <Laugh className='inline-block'/></h1>
               <p className='mt-2'>
                 A simple school output build with HTML, CSS, and JavaScript that tells random jokes.</p>
 
@@ -106,12 +105,13 @@ export default function ServicesAndProjects() {
                   alt="RandomJokes img" 
                   onClick={output2}
                   className='w-full mt-4 rounded cursor-pointer hover:opacity-90-transition'
+                  title='go to website'
                   />
             </div>
 
-            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition'>
+            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
               <h1 className='text-xl font-semibold text-red-600'>
-                FitXpert</h1>
+                FitXpert <Dumbbell className='inline-block'/></h1>
               <p className='mt-2'>
               A basic school project created using HTML, CSS, and JavaScript. It's a gym website that displays pricing and allows users to apply for the program, and similar features.</p>
 
@@ -120,6 +120,7 @@ export default function ServicesAndProjects() {
                   alt="RandomJokes img" 
                   onClick={fitXpert}
                   className='w-full mt-4 rounded cursor-pointer hover:opacity-90-transition'
+                  title='go to website'
                   />
             </div>
           </div>
