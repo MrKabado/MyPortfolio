@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
 
@@ -15,6 +15,15 @@ import { Cog6ToothIcon } from '@heroicons/react/24/outline';
 import Headroom from 'react-headroom';
 
 export default function AboutMe() {
+
+  const [showBackground, setBackground] = useState(false);
+
+  const revealBG = () => {
+      setBackground(!showBackground);
+  };
+
+
+
   return (
     <div className='global-holder'>
 
@@ -36,7 +45,8 @@ export default function AboutMe() {
 
           <h1 className='text-[#2563eb] text-[25px] font-bold'>Background</h1>
           <br />
-          <p className='text-justify shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px]'>
+          { showBackground && (
+          <p className='text-justify shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px] duration-200 transition-all ease-in-out'>
           Hi again! My journey into tech began with a fascination for how things work behind the scenes—how websites load, how apps respond, and how technology continues to shape the world around us. That curiosity led me to pursue a degree in Information Technology at Cordova Public College. <br />
           <br />
           As an irregular student in Information Technology, my academic journey has been unique. Shifting between different sections and adapting to new classmates and teaching styles each semester has taught me the value of flexibility, perseverance, and the ability to thrive in dynamic environments. But it’s also been a valuable experience that has taught me to stay resilient, adaptable, and focused on continuous learning. <br />
@@ -45,9 +55,19 @@ export default function AboutMe() {
           <br />
           Outside of my studies, I’m passionate about cycling and personal development. I believe that discipline and consistency—both in life and in code—are key to achieving long-term success. My goal is to use technology not only to grow personally and professionally, but also to support my family and contribute to the world in meaningful ways. <br />
           </p>
+          )}
+          <button 
+            id='btn-background' 
+            onClick={revealBG}
+            className='w-fit text-[#64748B] text-sm border border-solid border-transparent transition-all ease-in-out'
+            >
+            {showBackground ? 'Hide My Background' : 'Show My Background'}
+          </button>
           <br />
 
-          <h1 className="text-[#2563eb] text-[25px] font-bold drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)] hover:text-[#3b82f6] transition-all duration-300">What I Can Do!</h1>
+          <h1 
+            className="text-[#2563eb] text-[25px] font-bold transition-all duration-300">
+            What I Can Do!</h1>
           <p className='shadow-[0px_0px_5px_0px_gray] rounded-[5px] mt-5 p-2 text-[17px]'>I’m constantly honing my craft, solving problems, and crafting creative solutions. With a passion for design, development, and everything in between, I focus on building digital experiences that are both functional and engaging.</p>
           <br />
           <div className='skillset-holder flex flex-col justify-evenly gap-5'>

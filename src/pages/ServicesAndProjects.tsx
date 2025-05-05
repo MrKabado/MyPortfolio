@@ -35,7 +35,7 @@ export default function ServicesAndProjects() {
     
 
     {/* Start of Services part */}
-    <div className='font-poppins mx-[10%] my-[5%] p-10 text-[#1E293B] border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px]'>
+    <div className='font-poppins mx-[10%] my-[5%] p-10 text-[#1E293B] shadow-[-5px_0_5px_-2px_gray] rounded-[10px]'>
         <h1 className='text-[30px] text-[#2563eb] font-bold'>
           {/* <PencilSquareIcon className=' w-[40px] inline-block align-middle m-2'/> */}
           What I Create for You</h1>

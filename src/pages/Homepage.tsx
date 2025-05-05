@@ -28,7 +28,7 @@ function Homepage() {
         </p>
 
         <Link to="/Contact">
-          <button className='btn-1 px-[3%] py-[1%] border-[2px] border-solid border-transparent rounded-[5px] bg-[#2563EB] text-white text-[20px] font-medium w-fit duration-300 transition-all ease-in-out hover:border-2 hover:border-solid hover:border-[#2563EB] hover:bg-transparent hover:text-[#2563eb] hover:scale-[1.03]'>
+          <button className='btn-1 px-[3%] py-[1%] border-[2px] border-solid border-transparent rounded-[5px] bg-[#1E293B] text-white text-[20px] font-medium w-fit duration-300 transition-all ease-in-out hover:border-2 hover:border-solid hover:border-[#1E293B] hover:bg-transparent hover:text-[#1E293B] hover:scale-[1.03]'>
           Contact Me Now! <PhoneArrowDownLeftIcon className="w-6 h-6 inline-flex" /> 
           </button>
         </Link>
