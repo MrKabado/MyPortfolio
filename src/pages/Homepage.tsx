@@ -23,8 +23,8 @@ function Homepage() {
       <div className='description-holder w-[40%] flex flex-col justify-between'>
         <p className='text-[50px] font-[500] leading-tight'>
           Hi there! <HandRaisedIcon className='w-[50px] h-[50px] inline-flex'/> <br /> I am 
-          <span className='text-[#2563EB] font-[700]'> Jerson Jay </span><br /> 
-          an Aspiring <br /> <span className='text-[#2563EB] font-[700]'> Web Developer </span>
+          <span className='text-[#2653eb] font-[700]'> Jerson Jay </span><br /> 
+          an Aspiring <br /> <span className='text-[#2653eb] font-[700]'> Web Developer </span>
         </p>
 
         <Link to="/Contact">
@@ -33,7 +33,8 @@ function Homepage() {
           </button>
         </Link>
         <div className='flex justify-start w-fit'>
-            <SunIcon className='w-[30px] hover:scale-[1.05] hover:text-[#2563eb] hover:cursor-pointer'/><MoonIcon className='w-[30px] mx-5 hover:scale-[1.05] hover:text-[#2563eb] hover:cursor-pointer'/>
+            <SunIcon className='w-[30px] hover:scale-[1.05] hover:cursor-pointer hover:'/>
+            <MoonIcon className='w-[30px] mx-5 hover:scale-[1.05] hover:cursor-pointer'/>
           </div>
       </div>
 
