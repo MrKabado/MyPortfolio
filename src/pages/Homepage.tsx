@@ -8,7 +8,7 @@ import { SunIcon } from '@heroicons/react/24/outline';
 import { MoonIcon } from '@heroicons/react/24/outline';
 
 import Header from '../components/Header';
-import { Link } from 'react-router-dom';
+import { Link, href } from 'react-router-dom';
 
 function Homepage() {
   return (
@@ -23,8 +23,8 @@ function Homepage() {
       <div className='description-holder w-[40%] flex flex-col justify-between'>
         <p className='text-[50px] font-[500] leading-tight'>
           Hi there! <HandRaisedIcon className='w-[50px] h-[50px] inline-flex'/> <br /> I am 
-          <span className='text-[#2653eb] font-[700]'> Jerson Jay </span><br /> 
-          an Aspiring <br /> <span className='text-[#2653eb] font-[700]'> Web Developer </span>
+          <span className='text-[#1E293B] font-[700]'> Jerson Jay </span><br /> 
+          an Aspiring <br /> <span className='text-[#1E293B] font-[700]'> Web Developer </span>
         </p>
 
         <Link to="/Contact">
