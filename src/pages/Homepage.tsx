@@ -13,6 +13,7 @@ import { HandRaisedIcon } from '@heroicons/react/24/outline';
 import Header from '../components/Header';
 import { Link, href } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Homepage.css';
 
 function Homepage() {
     const [isFirstImage, setisFirstimage] = useState(true);
@@ -41,15 +42,16 @@ function Homepage() {
         </p>
 
         <Link to="/Contact">
-          <button className='btn-1 px-[3%] py-[1%] border-[2px] border-solid border-transparent rounded-[5px] bg-[#1E293B] text-white text-[20px] font-medium w-fit duration-300 transition-all ease-in-out hover:border-2 hover:border-solid hover:border-[#1E293B] hover:bg-transparent hover:text-[#1E293B] hover:scale-[1.03]'>
+          <button className='btn-1 px-[3%] py-[1%] border-[2px] border-solid border-transparent rounded-[5px] bg-[#1e293b] text-white text-[20px] font-medium w-fit duration-300 transition-all ease-in-out hover:border-2 hover:border-solid hover:border-[#1E293B] hover:bg-transparent hover:text-[#1E293B] hover:scale-[1.03]'>
           Contact Me Now! <PhoneArrowDownLeftIcon className="w-6 h-6 inline-flex" /> 
           </button>
         </Link>
-        <div className='flex justify-start w-fi text-red-600'>
+        <div className='flex justify-start w-fi'>
             <img 
             src={isFirstImage ? LightbulbRegular : LightbulbSolid} 
             alt="lightbulb" 
-            className='w-8 transition hover:cursor-pointer hover:scale-110'
+            className='filter-black w-8 transition hover:cursor-pointer hover:scale-110 fill-red-500'
+            title='toggle switch'
             onClick={handleClick}
             />      
         </div>

@@ -32,18 +32,18 @@ export default function AboutMe() {
     </Headroom>
 
 
-      <div className='font-poppins about-holder border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px] mx-[10%] my-[5%] p-10 text-[#1E293B]'>
+      <div className='font-poppins about-holder border-solid border-l-[5px] border-[#1E293B] border-t-0 border-r-0 border-b-0 rounded-[20px] mx-[10%] my-[5%] p-10 text-[#1e293b]'>
         <div className='des-holder flex flex-col'>
-          <h1 className='text-[30px] text-[#2563eb] font-bold'>
+          <h1 className='text-[30px] text-[#1E293B] font-extrabold'>
             <UserIcon className='w-[50px] inline-block align-middle m-2' /> Who Am I?
           </h1>
           <br />
-          <p className='text-justify shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px]'>
+          <p className='text-justify shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px] bg-[#1e293b9e] text-[#F8FAFC]'>
           Hi, I’m Jerson Jay — a dedicated Information Technology student passionate about turning ideas into digital solutions. I have a passion for technology and a knack for problem-solving, aiming to create innovative solutions that meet and exceed expectations.
           </p>
           <br />
 
-          <h1 className='text-[#2563eb] text-[25px] font-bold'>Background</h1>
+          <h1 className='text-[#1E293B] text-[25px] font-bold'>Background</h1>
           <br />
           { showBackground && (
           <p className='text-justify shadow-[0px_0px_5px_0px_gray] rounded-[5px] p-2 text-[17px] duration-200 transition-all ease-in-out'>
@@ -66,14 +66,14 @@ export default function AboutMe() {
           <br />
 
           <h1 
-            className="text-[#2563eb] text-[25px] font-bold transition-all duration-300">
+            className="text-[#1E293B] text-[25px] font-bold transition-all duration-300">
             What I Can Do!</h1>
           <p className='shadow-[0px_0px_5px_0px_gray] rounded-[5px] mt-5 p-2 text-[17px]'>I’m constantly honing my craft, solving problems, and crafting creative solutions. With a passion for design, development, and everything in between, I focus on building digital experiences that are both functional and engaging.</p>
           <br />
           <div className='skillset-holder flex flex-col justify-evenly gap-5'>
               
               <div className='rounded-[5px]  p-2 w-[100%]'>
-                <h1 className='text-[25px] text-[#2563eb] font-bold'>My Skills</h1>
+                <h1 className='text-[25px] text-[#1E293B] font-bold'>My Skills</h1>
 
                 <br />
 
@@ -120,10 +120,10 @@ export default function AboutMe() {
                 
               </div>
 
-              <div className='shadow-[0px_0px_2px_0px_gray] rounded-[5px] bg-[#F0F4FF] p-2 w-[100%]'>
-                <h1 className='text-[25px] text-[#2563eb] font-bold'> Ready to bring ideas to life?</h1>
+              <div className='shadow-[0px_0px_2px_0px_gray] rounded-[5px] bg-[#F1F5F9] p-2 w-[100%]'>
+                <h1 className='text-[25px] text-[#1E293B] font-bold'> Ready to bring ideas to life?</h1>
                 <p className='text-[17px]'>I offer creative, reliable, and efficient solutions that go beyond just code. Tap in and explore what I can do for you — because your next big project deserves nothing less. <Link to="/contact">
-                  <button className='text-[17px] rounded px-2 text-[#2563eb] hover:underline'>
+                  <button className='text-[17px] rounded px-2 text-[#3B82F6] hover:underline'>
                     Reach Out!</button>
                 </Link></p>
               </div>
