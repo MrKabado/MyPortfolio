@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+//images
 import Profile from '../assets/profile-no-bg.png';
+import LightbulbRegular from '../assets/lightbulb-regular.svg';
+import LightbulbSolid from '../assets/lightbulb-solid.svg';
+
 //icon
 import { PhoneArrowDownLeftIcon } from '@heroicons/react/24/outline';
 import { HandRaisedIcon } from '@heroicons/react/24/outline';
-import { SunIcon } from '@heroicons/react/24/outline';
-import { MoonIcon } from '@heroicons/react/24/outline';
+
 
 import Header from '../components/Header';
 import { Link, href } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Homepage() {
+    const [isFirstImage, setisFirstimage] = useState(true);
+
+    const handleClick = () => {
+      setisFirstimage(prev => {
+        console.log(!prev);
+        return !prev;
+      });
+    }
+
   return (
     <div>
     <Header />
@@ -32,10 +45,14 @@ function Homepage() {
           Contact Me Now! <PhoneArrowDownLeftIcon className="w-6 h-6 inline-flex" /> 
           </button>
         </Link>
-        <div className='flex justify-start w-fit'>
-            <SunIcon className='w-[30px] hover:scale-[1.05] hover:cursor-pointer hover:'/>
-            <MoonIcon className='w-[30px] mx-5 hover:scale-[1.05] hover:cursor-pointer'/>
-          </div>
+        <div className='flex justify-start w-fi text-red-600'>
+            <img 
+            src={isFirstImage ? LightbulbRegular : LightbulbSolid} 
+            alt="lightbulb" 
+            className='w-8 transition hover:cursor-pointer hover:scale-110'
+            onClick={handleClick}
+            />      
+        </div>
       </div>
 
       {/* image-holder */}
