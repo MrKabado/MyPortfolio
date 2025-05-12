@@ -35,30 +35,30 @@ export default function ServicesAndProjects() {
     
 
     {/* Start of Services part */}
-    <div className='font-poppins mx-[10%] my-[5%] p-10 text-[#1E293B] border-solid border-l-[5px] border-blue-600 border-t-0 border-r-0 border-b-0 rounded-[20px]'>
-        <h1 className='text-[30px] text-[#2563eb] font-bold'>
+    <div className='font-poppins mx-[10%] my-[5%] p-10 text-[#1E293B] border-solid border-l-[5px] border-[#1E293B] border-t-0 border-r-0 border-b-0 rounded-[20px]'>
+        <h1 className='text-[30px] text-[#1E293B] font-bold'>
           {/* <PencilSquareIcon className=' w-[40px] inline-block align-middle m-2'/> */}
           What I Create for You</h1>
 
         <div className='font-montserrat flex flex-row sm:grid-cols-3 gap-4 my-5'>
-          <div className='group border-2 border-transparent shadow-[0px_0px_5px_0px_gray] rounded-[5px] my-5 p-2 duration-500 transition-all ease-in-out hover:translate-y-[-10px] hover:bg-[#4070F4] hover:text-white'>
-            <h1 className='text-[#2563eb] text-[23px] font-extrabold group-hover:text-white mb-2'>
+          <div className='group border-2 border-transparent shadow-[0px_0px_5px_0px_gray] rounded-[5px] my-5 p-2 duration-500 transition-all ease-in-out hover:translate-y-[-10px] hover:bg-[#1E293B] hover:text-white'>
+            <h1 className='text-[#1E293B] text-[23px] font-extrabold group-hover:text-white mb-2'>
               <CodeBracketIcon className='w-10' />
               Web Development</h1>
             <p className='text-justify text-[15px]'>
               I create websites tailored to your goals—whether it's to showcase a portfolio, promote a business, or connect with your audience. Each project is built to be fast, functional, and visually engaging.</p>
           </div>
 
-          <div className='group border-2 border-transparent shadow-[0px_0px_5px_0px_gray] rounded-[5px] my-5 p-2 duration-500 transition-all ease-in-out hover:translate-y-[-10px] hover:bg-[#4070F4] hover:text-white'>
-            <h1 className='text-[#2563eb] text-[23px] font-extrabold group-hover:text-white mb-2'>
+          <div className='group border-2 border-transparent shadow-[0px_0px_5px_0px_gray] rounded-[5px] my-5 p-2 duration-500 transition-all ease-in-out hover:translate-y-[-10px] hover:bg-[#1E293B] hover:text-white'>
+            <h1 className='text-[#1E293B] text-[23px] font-extrabold group-hover:text-white mb-2'>
               <CpuChipIcon  className='w-10'/>
               Programming Solutions</h1>
             <p className='text-justify text-[15px]'>
               I offer programming services to help you tackle various software challenges. From writing clean, efficient code to debugging and optimizing existing programs, I am equipped to handle a range of programming tasks.</p>
           </div>
 
-          <div className='group border-2 border-transparent shadow-[0px_0px_5px_0px_gray] rounded-[5px] my-5 p-2 duration-500 transition-all ease-in-out hover:translate-y-[-10px] hover:bg-[#4070F4] hover:text-white'>
-            <h1 className='text-[#2563eb] text-[23px] font-extrabold group-hover:text-white mb-2'>
+          <div className='group border-2 border-transparent shadow-[0px_0px_5px_0px_gray] rounded-[5px] my-5 p-2 duration-500 transition-all ease-in-out hover:translate-y-[-10px] hover:bg-[#1E293B] hover:text-white'>
+            <h1 className='text-[#1E293B] text-[23px] font-extrabold group-hover:text-white mb-2'>
               <DevicePhoneMobileIcon className='w-10' />
               App Design</h1>
             <p className='text-justify text-[15px]'>
@@ -72,17 +72,17 @@ export default function ServicesAndProjects() {
 
         {/* This is Project part */}
         <div className='my-[10%]'>
-        <h1 className='text-[25px] font-bold text-[#2563eb]'>
+        <h1 className='text-[25px] font-bold text-[#1E293B]'>
           My Small Projects</h1>
         <p className='text-[15px]'>
           These are some small projects that I've made during school and while learning new things.</p>
 
           {/* project images holder */}
           <div className='grid gap-10 mt-10 md:grid-cols-2'>
-            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
-              <h1 className='text-xl font-semibold text-blue-600'>
+            <div className='bg-[#1E293B] rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
+              <h1 className='text-xl font-semibold text-blue-400'>
                 My Portfolio <GraduationCap className='inline-block'/></h1>
-              <p className='mt-2'>
+              <p className='mt-2 text-white'>
                 A personal Portfolio made using basic HTML, CSS, and a bit of JavaScript.</p>
 
               <img 
@@ -94,10 +94,10 @@ export default function ServicesAndProjects() {
                 />
             </div>
 
-            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
-              <h1 className='text-xl font-semibold text-green-600'>
+            <div className='bg-[#1E293B] rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
+              <h1 className='text-xl font-semibold text-[#8DA4D0]'>
                 Random Jokes <Laugh className='inline-block'/></h1>
-              <p className='mt-2'>
+              <p className='mt-2 text-white'>
                 A simple school output build with HTML, CSS, and JavaScript that tells random jokes.</p>
 
                 <img 
@@ -109,10 +109,10 @@ export default function ServicesAndProjects() {
                   />
             </div>
 
-            <div className='bg-gray-50 rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
-              <h1 className='text-xl font-semibold text-red-600'>
+            <div className='bg-[#1E293B] rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
+              <h1 className='text-xl font-semibold text-red-400'>
                 FitXpert <Dumbbell className='inline-block'/></h1>
-              <p className='mt-2'>
+              <p className='mt-2 text-white'>
               A basic school project created using HTML, CSS, and JavaScript. It's a gym website that displays pricing and allows users to apply for the program, and similar features.</p>
 
                 <img 
