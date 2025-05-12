@@ -104,7 +104,7 @@ export default function ServicesAndProjects() {
                   src={Output2} 
                   alt="RandomJokes img" 
                   onClick={output2}
-                  className='w-full mt-4 rounded cursor-pointer hover:opacity-90-transition'
+                  className='w-full mt-4 rounded cursor-pointer hover:opacity-90 transition'
                   title='go to website'
                   />
             </div>
@@ -119,7 +119,7 @@ export default function ServicesAndProjects() {
                   src={FitXpert} 
                   alt="RandomJokes img" 
                   onClick={fitXpert}
-                  className='w-full mt-4 rounded cursor-pointer hover:opacity-90-transition'
+                  className='w-full mt-4 rounded cursor-pointer hover:opacity-90 transition'
                   title='go to website'
                   />
             </div>
