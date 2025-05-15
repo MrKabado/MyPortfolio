@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Headroom from 'react-headroom';
+import { useState } from 'react';
 
 //icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -50,9 +51,10 @@ export default function Contact() {
 
         <div className='fillup-holder w-[50%] border-2 border-solid border-transparent p-5'>
           <form action="" className='space-y-5'>
-            <input type="text" placeholder='Your Name' 
+            <input type="text"
+            placeholder='Your Name' required
             className='focus:outline-[#1E293B] w-full py-1 px-2 rounded-lg shadow-[0px_0px_3px_0px_gray] transition border-2 border-solid border-transparent hover:border-[#1E293B]'/><br />
-            <input type="email" placeholder='Your Email'
+            <input type="email" placeholder='Your Email' required
             className='focus:outline-[#1E293B] w-full py-1 px-2 rounded-lg shadow-[0px_0px_3px_0px_gray] transition border-2 border-solid border-transparent hover:border-[#1E293B]'
             /><br />
 
@@ -61,9 +63,11 @@ export default function Contact() {
             className='w-full h-40 p-2 border-2 border-solid border-gray-transparent focus:outline-[#1E293B] py-1 px-2 rounded-lg shadow-[0px_0px_3px_0px_gray] transition border-transparent hover:border-[#1E293B]'
             />
 
-            <button 
+            <button
+            type='submit'
             className='py-1 px-2 border-2 border-solid border-[#1E293B] text-white bg-[#1E293B] transition rounded-lg hover:scale-[1.03]'>
             Submit Message</button>
+            <p className='pl-5 text-xs hidden'>Submited</p>
 
           </form>
         </div>
