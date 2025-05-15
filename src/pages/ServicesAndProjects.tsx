@@ -6,11 +6,12 @@ import Headroom from 'react-headroom';
 import Output1 from '../assets/output-1.png';
 import Output2 from '../assets/output-2.png';
 import FitXpert from '../assets/FitXpert.png';
+import IntramsSurvey from '../assets/IntramsSurvey.png';
 
 
 //icon
 import { DevicePhoneMobileIcon, CpuChipIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
-import { Dumbbell, GraduationCap, Laugh } from 'lucide-react';
+import { Dumbbell, GraduationCap, Laugh, ScrollTextIcon } from 'lucide-react';
 
 export default function ServicesAndProjects() {
 
@@ -25,6 +26,12 @@ export default function ServicesAndProjects() {
   const fitXpert = () => {
     window.open('https://fitxpert.netlify.app/', '_blank');
   }
+
+  const intramsSurvey = () => {
+    window.open('https://intrams-survey.netlify.app/', '_blank');
+  }
+
+  
 
   return (
     //global holder
@@ -119,6 +126,21 @@ export default function ServicesAndProjects() {
                   src={FitXpert} 
                   alt="RandomJokes img" 
                   onClick={fitXpert}
+                  className='w-full mt-4 rounded cursor-pointer hover:opacity-90 transition'
+                  title='go to website'
+                  />
+            </div>
+
+            <div className='bg-[#1E293B] rounded-xl shadow p-5 hover:shadow-md transition hover:scale-[1.03]'>
+              <h1 className='text-xl font-semibold text-sky-300'>
+                Intrams Survey <ScrollTextIcon className='inline-block'/></h1>
+              <p className='mt-2 text-white'>
+              A school project that collects student feedback on intramurals, including favorite events and suggestions, and displays the results in a simple interface.</p>
+
+                <img 
+                  src={IntramsSurvey} 
+                  alt="RandomJokes img" 
+                  onClick={intramsSurvey}
                   className='w-full mt-4 rounded cursor-pointer hover:opacity-90 transition'
                   title='go to website'
                   />
